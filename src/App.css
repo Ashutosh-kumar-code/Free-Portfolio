@@ -1,0 +1,22 @@
+#root {
+  margin: 0 auto;
+  
+}
+
+.what_ido_cards:hover{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+.aboutus_socialicons svg{
+  color: #A53DFF;
+  height: 22px;
+  width: 24px;
+}
+.aboutus_socialicons:hover{
+  background: #A53DFF;
+  cursor: pointer;
+}
+.aboutus_socialicons:hover svg{
+color: #fff;
+}

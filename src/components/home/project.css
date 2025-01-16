@@ -1,0 +1,151 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* favi icon edit flaticon specks #FFCE71 */
+/* #FFB357 dark right */
+
+.project_done_byme{
+    font-family: "Work Sans", serif;
+}
+
+  /* -- new activity -- */
+  /* .right_activitypart{margin-bottom:60px} */
+  /* .right_activitypart h2{color:#343435;margin-bottom:25px;font-size:24px;font-weight:700} */
+  .activity_newcard1{background:#FFF;border:2px solid #FFF;box-shadow:0 7px 27px 0 rgba(2,14,26,0.13); font-family: "Work Sans", serif;
+border-radius: 8px;}
+  .activity_newcard1:hover{transition:.4s;border:2px solid #A53DFF;margin-top:-10px}
+  .activity_newcard1 .activity_cardimg{background-position:center;background-size:100% 100%;background-repeat:no-repeat;height:200px;}
+  .activity_newcard1 .cart_cont{padding: 12px 22px 24px 22px;}
+  .activity_newcard1 h6{margin-bottom:2px;color:#87909D;font-size:14px;font-weight:500}
+  .activity_newcard1 h4{margin-bottom:4px;color:#132238;font-size:18px;font-weight:600}
+  .activity_newcard1 p{color:#556070;margin-bottom:20px;font-size:14px;font-weight:400}
+  
+  .activity_newcard1  button{padding:10px 24px;border:1px solid #A53DFF;background:#fff;color:#A53DFF;font-size:16px;font-weight:600;text-transform:capitalize;text-decoration:none;
+border-radius: 5px; display: flex;align-items: center;
+gap: 20px; }
+.activity_newcard1  button svg{
+    
+    color: #A53DFF;
+}
+.activity_newcard1 button:hover svg{color:#fff;transition:.4s}
+  
+  .activity_newcard1 button:hover{background:#A53DFF;color:#fff;transition:.4s}
+  
+  /* -- new activity end -- */
+
+  /* Testimonial */
+
+  .swiper_testmonial_outers{
+    margin: 50px 0px;
+  }
+
+ 
+
+  .swiper-slide h4{
+    
+    font-family: "Work Sans", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #2B384C;
+    margin-bottom: 24px;
+  }
+  .swiper-slide h6{
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+color: #000000;    
+margin-bottom: 8px;
+  }
+
+  .swiper-slide p{
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+color: #000000;    
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active{
+width: 30px !important;
+height: 8px !important;
+background: #210C33 !important;
+  }
+  .swiper-pagination-bullet{
+    background: #C3C7CE !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 100px !important;
+  }
+
+
+  /* Work process  */
+  .workprocess_card1{
+    font-family: "Work Sans", serif;
+    box-shadow: 32px 32px 124px 0px #2B384C1A;
+border-radius: 12px;
+padding: 32px;
+background: #fff;
+  }
+
+  .workprocess_card1 h3{
+   margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+color: #132238;
+}
+.workprocess_card1 p{  
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left; 
+color: #556070;
+}
+.workprocess_card1 img{
+    margin-bottom: 32px;
+    height: 72px;
+    width: 72px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 12px 12px 24px 0px rgba(2,14,26,0.13);
+}
+
+/* // Skills Section  */
+
+.skills_1{
+  border-radius: 20px;
+     
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  }
+  .skills_1:hover{
+    transition: 0.3s;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    transform: scale(1.05);
+  }
+
+  .skills_1 h2{
+      font-family: "Poppins", serif;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+  color: #000000;    
+  } 
+  .skills_1 img{
+      margin-bottom: 6px;
+  }
