@@ -46,7 +46,7 @@ const WhatIdo = ({refs}) => {
                         {/* <Button text={"Say Hello!"} onClick={() => console.log("")} /> */}
                         <a
                 // href="https://mail.google.com/mail/?view=cm&fs=1&to=shivani@gmail.com"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=ashu2040kumar@gmail.com&su=Hello%20Shivani&body=I%20wanted%20to%20get%20in%20touch%20regarding%20[Your%20Topic]%2E%20Please%20let%20me%20know%20a%20convenient%20time%20to%20discuss%2E"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ashu2040kumar@gmail.com&su=Hello%20Ashutosh&body=I%20wanted%20to%20get%20in%20touch%20regarding%20[Your%20Topic]%2E%20Please%20let%20me%20know%20a%20convenient%20time%20to%20discuss%2E"
  
                 target="_blank"
                 rel="noopener noreferrer"

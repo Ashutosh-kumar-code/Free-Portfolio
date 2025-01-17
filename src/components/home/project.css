@@ -124,14 +124,14 @@ color: #556070;
 
 .skills_1{
   border-radius: 20px;
-     
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+ 
   }
   .skills_1:hover{
     transition: 0.3s;
@@ -148,4 +148,15 @@ color: #556070;
   } 
   .skills_1 img{
       margin-bottom: 6px;
+      height: 64px;
+  }
+
+  .project_description_high{
+    height: 115px;
+  }
+
+  @media screen and (max-width: 400px) {
+    .project_description_high{
+      height: auto;
+    }
   }

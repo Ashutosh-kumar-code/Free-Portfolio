@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Container from "./common/Container";
-import profestionaluser from "../assets/svg/professtional-user.svg";
+import profestionaluser from "../assets/images/port-imag10.jpg";
 import Button from "./ui/Button";
 import ButtonBox from "./ui/ButtonBox";
 import download from "../assets/svg/download.svg";
@@ -50,11 +50,11 @@ const ProfesstionalUser = ({ scrollToSection, refs }) => {
       className="grid grid-cols-1 lg:grid-cols-2  px-3 sm:mx-10 xl:mx-20 lg:flex-row lg:p-10 xl:px-20  border bg-white shadow rounded-2xl lg:gap-20"
     >
       <div clas>
-        <div className="flex justify-center items-center pt-3">
+        <div className="flex justify-center items-center pt-5 rounded-xl  ">
           <img
             src={profestionaluser}
             alt=""
-            className="sm:p-6 lg:p-0 lg:w-[%]"
+            className="sm:p-6 lg:p-0 rounded-xl sm:"
           />
         </div>
         <div className="flex justify-center  items-center -mt-4 sm:-mt-12 lg:mr-50  lg:-mt-6">
@@ -96,13 +96,13 @@ const ProfesstionalUser = ({ scrollToSection, refs }) => {
               onClick={() => scrollToSection(refs.ourProjects)}
             />
 
-            <button
+            {/* <button
               onClick={() => handleDownload()}
               className={`px-4 flex   gap-2 py-2 text-base font-semibold border border-[#A53DFF] text-[#A53DFF] rounded hover:bg-purple-700 hover:text-white transition duration-200 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed `}
             >
               <BiDownload style={{ height: "24px", width: "24px" }} /> Download
               CV
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
