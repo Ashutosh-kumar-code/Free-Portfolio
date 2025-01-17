@@ -16,6 +16,7 @@ const Home = () => {
   const ourMission = useRef(null);
   const ourSkills = useRef(null);
   const ourProjects = useRef(null);
+  const home_section = useRef(null);
   // const ourSkills = useRef(null);
 
   const scrollToSection = (ref) => {
@@ -28,10 +29,10 @@ const Home = () => {
   return (
     <>
     {/* Top Navbar */}
-<Navbar scrollToSection={scrollToSection} refs={{ aboutusRef, whatIdo, ourMission, ourSkills,ourProjects  }} />
+<Navbar scrollToSection={scrollToSection} refs={{ aboutusRef, whatIdo, ourMission, ourSkills,ourProjects,home_section  }} />
 
 {/* Below Section */}
-      <HeroSection scrollToSection={scrollToSection} refs={{ aboutusRef, ourProjects }} />
+      <HeroSection scrollToSection={scrollToSection} refs={{ aboutusRef, ourProjects,home_section }} />
       <WhatIdo refs={{whatIdo}} />
       <OurMission refs={{ourMission}} />
       <SkillsAbilities refs={{ourSkills}} />
@@ -40,7 +41,7 @@ const Home = () => {
       <WorkProcess/>
 
       {/* Footer */}
-      <Footer scrollToSection={scrollToSection} refs={{ aboutusRef, whatIdo, ourMission, ourSkills,ourProjects  }} />
+      <Footer scrollToSection={scrollToSection} refs={{ aboutusRef, whatIdo, ourMission, ourSkills,ourProjects,home_section  }} />
 
     </>
   )

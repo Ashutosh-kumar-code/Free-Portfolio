@@ -7,7 +7,8 @@ import ProfesstionalUser from "../ProfesstionalUser";
 const HeroSection = ({ scrollToSection, refs }) => {
   return (
     <Container>
-      <div className="lg:flex lg:flex-row-reverse gap-10 lg:justify-center lg:items-center pb-10 lg:pb-16 xl:pb-0 xl:justify-between lg:py-0">
+      <div ref={refs.home_section}
+      id="home_section" className="lg:flex lg:flex-row-reverse gap-10 lg:justify-center lg:items-center pb-10 lg:pb-16 xl:pb-0 xl:justify-between lg:py-0">
         <div className="xl:w-[50%]">
           <img
             src={person}

@@ -24,9 +24,9 @@ const Navbar = ({ scrollToSection, refs }) => {
                 </div>
                 <div className='hidden lg:flex'>
                     <ul className='  flex   gap-10 justify-center items-center'>
-                        <li><Link to={"/"} className='text-[#333333] font-medium text-base'>Home</Link></li>
+                        <li><Link onClick={() => scrollToSection(refs.home_section)} className='text-[#333333] font-medium text-base'>Home</Link></li>
                         <li><Link onClick={() => scrollToSection(refs.aboutusRef)} className='text-[#333333] font-medium text-base'>About</Link></li>
-                        <li><Link onClick={() => scrollToSection(refs.Process)} className='text-[#333333] font-medium text-base'>Process</Link></li>
+                        {/* <li><Link onClick={() => scrollToSection(refs.Process)} className='text-[#333333] font-medium text-base'>Process</Link></li> */}
                         <li><Link onClick={() => scrollToSection(refs.ourMission)} className='text-[#333333] font-medium text-base'>Mission</Link></li>
                         <li><Link onClick={() => scrollToSection(refs.ourSkills)} className='text-[#333333] font-medium text-base'>Skills</Link></li>
                         <li><Link onClick={() => scrollToSection(refs.ourProjects)} className='text-[#333333] font-medium text-base'>Projects</Link></li>

@@ -16,7 +16,7 @@ const Footer = ({ scrollToSection, refs }) => {
                         <div>
                             <div className='font-bold text-[#A53DFF] pb-3 text-lg text-center sm:text-start xl:text-2xl'>quick links  </div>
                             <ul className='flex flex-col items-center justify-center gap-2 sm:justify-center sm:items-start '>
-                                <li><Link onClick={() => scrollToSection(refs.home)} >Home</Link></li>
+                                <li><Link onClick={() => scrollToSection(refs.home_section)} >Home</Link></li>
                                 <li><Link onClick={() => scrollToSection(refs.aboutusRef)} >About</Link></li>
                                 <li><Link onClick={() => scrollToSection(refs.ourProjects)} >Projects</Link></li>
                                 <li><Link onClick={() => scrollToSection(refs.ourSkills)} >Skills</Link></li>
