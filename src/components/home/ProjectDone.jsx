@@ -72,7 +72,7 @@ const ProjectDone = ({refs}) => {
                         </p>
 
                         <button>
-                          Case Study <MoveRight />
+                         see Case Study <MoveRight />
                         </button>
                       </div>
                     </div>
