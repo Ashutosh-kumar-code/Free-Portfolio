@@ -1,6 +1,6 @@
 import React from 'react';
 
-import image1 from "../../assets/images/project.png"
+
 import reactjs from "../../assets/images/react.png"
 import nextjs from "../../assets/images/nextjs.png"
 import image4 from "../../assets/images/vuejs.png"
@@ -33,62 +33,62 @@ import app_dev from "../../assets/images/app-dev.png"
 import web_dev from "../../assets/images/web-dev.png"
 import Container from '../common/Container';
 
-const SkillsAbilities = ({refs}) => {
+const SkillsAbilities = ({ refs }) => {
 
-    const myskills_data = [
-        {imgicon: reactjs, skillname:"React.js"},
-        {imgicon: nodejs, skillname:"Node.js"},
-        {imgicon: express, skillname:"Express.js"},
-        {imgicon: nextjs, skillname:"Next.js"},
-        {imgicon: ai_img, skillname:"AI"},
-        {imgicon: html, skillname:"HTML"},
-        {imgicon: css, skillname:"CSS.js"},
-        {imgicon: sass, skillname:"SCSS.js"},
-        {imgicon: js, skillname:"Javascript.js"},
-        {imgicon: typescript, skillname:"Typescript.js"},
-        {imgicon: angularjs, skillname:"AngularJs"},
-        {imgicon: image4, skillname:"Vue.js"},
-        {imgicon: mongodb, skillname:"Mongodb"},
-        {imgicon: postgress, skillname:"PostgreSQL"},
-        {imgicon: supabase, skillname:"Supabase"},
-        {imgicon: orms, skillname:"Prism ORM"},
-        {imgicon: orms, skillname:"Drizzle ORM"},
-        {imgicon: authentication, skillname:"Clerk | Authentication"},
-        {imgicon: bootstrap, skillname:"Bootstrap"},
-        {imgicon: material, skillname:"Material UI"},
-        {imgicon: tailwind, skillname:"Tailwind Css"},
-        {imgicon: git, skillname:"Git"},
-        {imgicon: github, skillname:"Github"},
-        {imgicon: student, skillname:"Students Project"},
-        {imgicon: python, skillname:"Python"},
-        {imgicon: java, skillname:"Java"},
-        {imgicon: web_dev, skillname:"Web Development"},
-        {imgicon: app_dev, skillname:"App Development"},
-    ]
+  const myskills_data = [
+    { imgicon: reactjs, skillname: "React.js" },
+    { imgicon: nodejs, skillname: "Node.js" },
+    { imgicon: express, skillname: "Express.js" },
+    { imgicon: nextjs, skillname: "Next.js" },
+    { imgicon: ai_img, skillname: "AI" },
+    { imgicon: html, skillname: "HTML" },
+    { imgicon: css, skillname: "CSS.js" },
+    { imgicon: sass, skillname: "SCSS.js" },
+    { imgicon: js, skillname: "Javascript.js" },
+    { imgicon: typescript, skillname: "Typescript.js" },
+    { imgicon: angularjs, skillname: "AngularJs" },
+    { imgicon: image4, skillname: "Vue.js" },
+    { imgicon: mongodb, skillname: "Mongodb" },
+    { imgicon: postgress, skillname: "PostgreSQL" },
+    { imgicon: supabase, skillname: "Supabase" },
+    { imgicon: orms, skillname: "Prism ORM" },
+    { imgicon: orms, skillname: "Drizzle ORM" },
+    { imgicon: authentication, skillname: "Clerk | Authentication" },
+    { imgicon: bootstrap, skillname: "Bootstrap" },
+    { imgicon: material, skillname: "Material UI" },
+    { imgicon: tailwind, skillname: "Tailwind Css" },
+    { imgicon: git, skillname: "Git" },
+    { imgicon: github, skillname: "Github" },
+    { imgicon: student, skillname: "Students Project" },
+    { imgicon: python, skillname: "Python" },
+    { imgicon: java, skillname: "Java" },
+    { imgicon: web_dev, skillname: "Web Development" },
+    { imgicon: app_dev, skillname: "App Development" },
+  ]
 
   return (
-    <Container> 
-    <div ref={refs.ourSkills} id="ourSkills" className=''>
-      <h1 className='text-3xl  font-bold text-[#132238] text-center leading-9 pt-5 sm:text-4xl mt-4 sm:mt-16  lg:text-center lg:text-[38px]'> Skills & Abilities</h1>
-                    <p className='text-base py-8 text-[#87909D] text-center lg:text-center lg:text-[17px]'> Empowering digital innovation with a versatile skill set and modern technologies
-                        </p>
+    <Container>
+      <div ref={refs.ourSkills} id="ourSkills" className=''>
+        <h1 className='text-3xl  font-bold text-[#132238] text-center leading-9 pt-5 sm:text-4xl mt-4 sm:mt-16  lg:text-center lg:text-[38px]'> Skills & Abilities</h1>
+        <p className='text-base py-8 text-[#87909D] text-center lg:text-center lg:text-[17px]'> Empowering digital innovation with a versatile skill set and modern technologies
+        </p>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-   {
-    myskills_data.map((value,i)=>{
-        return(
-            <div class="skills_1 p-6 text-center">
-            <img src={value.imgicon} alt="" />
-           <h2>{value.skillname}</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+          {
+            myskills_data.map((value, i) => {
+              return (
+                <div class="skills_1 p-6 text-center">
+                  <img src={value.imgicon} alt="" />
+                  <h2>{value.skillname}</h2>
+                </div>
+              )
+            })
+          }
+
         </div>
-        )
-    })
-   }
-   
-  </div>
 
 
-    </div>
+      </div>
     </Container>
   )
 }
