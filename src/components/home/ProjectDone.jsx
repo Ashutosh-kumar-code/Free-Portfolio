@@ -53,13 +53,13 @@ const ProjectDone = ({ refs }) => {
       description: "This projects is to provide peoples the facilities to book their destination tours. Also it includes hotel booking and city tours."
       , live_link: "https://desert2.infosparkles.com/"
     },
-    {
-      skill: "",
-      web_image: budget_book,
-      topic_name: "Budget Booking",
-      description: "BudgetBooking is an innovative platform designed to help travelers find and book hotels within their budget. It features exclusive discounts and deals, ensuring users get the best value for their money while enjoying comfortable accommodations"
-      , live_link: "https://budgetbooking.infosparkles.com/"
-    },
+    // {
+    //   skill: "",
+    //   web_image: budget_book,
+    //   topic_name: "Budget Booking",
+    //   description: "BudgetBooking is an innovative platform designed to help travelers find and book hotels within their budget. It features exclusive discounts and deals, ensuring users get the best value for their money while enjoying comfortable accommodations"
+    //   , live_link: "https://budgetbooking.infosparkles.com/"
+    // },
     //    {
     // skill: "",
     // web_image: homeizon_web1,
