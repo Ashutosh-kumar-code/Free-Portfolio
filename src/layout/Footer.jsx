@@ -9,9 +9,9 @@ const Footer = ({ scrollToSection, refs }) => {
                 <div >
                     <div className='flex flex-col  gap-10 justify-between py-10 sm:flex-row'>
                         <div className='flex flex-col gap-2 items-center sm:items-start'>
-                            <h1 className='font-bold text-[#A53DFF] pb-3 text-lg xl:text-2xl' >Zenith Freelancer's Portfolio </h1>
+                            <h1 className='font-bold text-[#A53DFF] pb-3 text-lg xl:text-2xl' >Ashutosh Freelancer Portfolio </h1>
 
-                            <div className='text-center sm:w-64 sm:text-start' >Zenith Freelancer's Portfolio is more than just work—it's a story of passion, innovation, and excellence.Let's create something extraordinary together 🖥️!</div>
+                            <div className='text-center sm:w-64 sm:text-start' >Ashutosh Freelancer Portfolio is more than just work—it's a story of passion, innovation, and excellence.Let's create something extraordinary together 🖥️!</div>
                         </div>
                         <div>
                             <div className='font-bold text-[#A53DFF] pb-3 text-lg text-center sm:text-start xl:text-2xl'>quick links  </div>
@@ -39,7 +39,7 @@ const Footer = ({ scrollToSection, refs }) => {
 
             </Container>
             <div className='border-t border-t-slate-400 py-5 text-center'>
-            © 2024 Zenith Freelancer. All Rights Reserved | Privacy Policy | Terms of Service
+            © 2024 Ashutosh Freelancer. All Rights Reserved | Privacy Policy | Terms of Service
             </div>
         </div>
     )
