@@ -5,18 +5,19 @@ import Container from "../common/Container";
 import "./project.css";
 
 import { MoveRight } from "lucide-react";
-import Button from "../ui/Button";
+// import Button from "../ui/Button";
 import supply_web1 from "../../assets/images/supply2.png";
 import deal_web1 from "../../assets/images/deal1.png";
 import lms_web1 from "../../assets/images/lms1.png";
 import desert_web1 from "../../assets/images/desert2.png";
-import homeizon_web1 from "../../assets/images/homeizon1.png";
-import budget_book from "../../assets/images/budget-book.jpeg";
+// import homeizon_web1 from "../../assets/images/homeizon1.png";
+// import budget_book from "../../assets/images/budget-book.jpeg";
 import online_shop from "../../assets/images/online-shop.jpeg";
+import admin_dashboard1 from "../../assets/images/admin_dash1.png";
 
 const ProjectDone = ({ refs }) => {
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   const data = [
     {
@@ -53,6 +54,13 @@ const ProjectDone = ({ refs }) => {
       description: "This projects is to provide peoples the facilities to book their destination tours. Also it includes hotel booking and city tours."
       , live_link: "https://desert2.infosparkles.com/"
     },
+     {
+      skill: "Reactjs + Vite",
+      web_image: admin_dashboard1,
+      topic_name: "Admin Dashboard",
+      description: "Fully responsive Medical Admin Dashboard built for efficient healthcare management. It features real-time stats, appointment tracking, and smooth navigation — ideal for clinics, hospitals, or health startups. Designed to impress clients with modern UI and powerful functionality."
+      , live_link : "https://www.awesomescreenshot.com/video/41143411?key=4c83714efef3206a50d23653faea22cb"
+    },
     // {
     //   skill: "",
     //   web_image: budget_book,
@@ -83,27 +91,27 @@ const ProjectDone = ({ refs }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[25px] py-10 xl:py-16 xl:px-12 ">
               {data.map((value, i) => {
                 return (
-                  <div className=" ">
+                  <div className=" " key={i}>
                     <div className="activity_newcard1  ">
                       <div
-                        class="activity_cardimg"
+                        className="activity_cardimg"
                         style={{
                           backgroundImage: `url(${value.web_image})`,
                         }}
                       ></div>
                       <div className="cart_cont">
-                        {/* <h6>{value.skill} </h6> */}
 
                         <h4>{value.topic_name}</h4>
                         <p className="project_description_high">
                           {value.description}
                         </p>
 
-                        <Link to={value.live_link} target="_blank">
+                      {value.live_link &&   <Link to={value.live_link} target="_blank">
                           <button >
                             Explore Live <MoveRight />
                           </button>
                         </Link>
+              }
                       </div>
                     </div>
                   </div>
