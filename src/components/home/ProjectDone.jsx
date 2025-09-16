@@ -6,8 +6,8 @@ import "./project.css";
 
 import { MoveRight } from "lucide-react";
 // import Button from "../ui/Button";
-import supply_web1 from "../../assets/images/supply2.png";
-import deal_web1 from "../../assets/images/deal1.png";
+// import supply_web1 from "../../assets/images/supply2.png";
+// import deal_web1 from "../../assets/images/deal1.png";
 import lms_web1 from "../../assets/images/lms1.png";
 import desert_web1 from "../../assets/images/desert2.png";
 // import homeizon_web1 from "../../assets/images/homeizon1.png";
