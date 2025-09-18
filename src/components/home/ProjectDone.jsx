@@ -1,11 +1,8 @@
 import React from "react";
 import { useNavigate, Link } from 'react-router-dom'
-
 import Container from "../common/Container";
 import "./project.css";
-
 import { MoveRight } from "lucide-react";
-// import Button from "../ui/Button";
 // import supply_web1 from "../../assets/images/supply2.png";
 // import deal_web1 from "../../assets/images/deal1.png";
 import lms_web1 from "../../assets/images/lms1.png";
@@ -14,6 +11,9 @@ import desert_web1 from "../../assets/images/desert2.png";
 // import budget_book from "../../assets/images/budget-book.jpeg";
 import online_shop from "../../assets/images/online-shop.jpeg";
 import admin_dashboard1 from "../../assets/images/admin_dash1.png";
+import ePower from "../../assets/images/Epower.png";
+import vegus_img from "../../assets/images/vegus.png";
+import chair_furniture from "../../assets/images/chair.png";
 
 const ProjectDone = ({ refs }) => {
 
@@ -55,20 +55,27 @@ const ProjectDone = ({ refs }) => {
       description: "This projects is to provide peoples the facilities to book their destination tours. Also it includes hotel booking and city tours."
       , live_link: "https://desert2.infosparkles.com/"
     },
-     {
+    {
+      skill: "Reactjs + Vite",
+      web_image: vegus_img,
+      topic_name: "Vegus Mind Health",
+      description: "Vagus Mind Health is your trusted online platform for personalized, flexible, and confidential therapy—anytime, anywhere. Licensed professionals, tailored plans, and safe support for every stage of life."
+      , live_link : "https://vagusmentalhealths.netlify.app/"
+    },
+    {
+      skill: "Reactjs + Vite",
+      web_image: ePower,
+      topic_name: "E-Power web template",
+      description: "A sleek one-page responsive web template built to highlight design, layout, and user experience—perfect for showcasing creativity and modern web styling."
+      , live_link : "https://e-powerweb.netlify.app/"
+    },
+      {
       skill: "Reactjs + Vite",
       web_image: admin_dashboard1,
       topic_name: "Admin Dashboard",
       description: "Fully responsive Medical Admin Dashboard built for efficient healthcare management. It features real-time stats, appointment tracking, and smooth navigation — ideal for clinics, hospitals, or health startups. Designed to impress clients with modern UI and powerful functionality."
       , live_link : "https://www.awesomescreenshot.com/video/41143411?key=4c83714efef3206a50d23653faea22cb"
     },
-    // {
-    //   skill: "",
-    //   web_image: budget_book,
-    //   topic_name: "Budget Booking",
-    //   description: "BudgetBooking is an innovative platform designed to help travelers find and book hotels within their budget. It features exclusive discounts and deals, ensuring users get the best value for their money while enjoying comfortable accommodations"
-    //   , live_link: "https://budgetbooking.infosparkles.com/"
-    // },
     //    {
     // skill: "",
     // web_image: homeizon_web1,

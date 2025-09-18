@@ -51,7 +51,7 @@ const SkillsAbilities = ({ refs }) => {
     { imgicon: mongodb, skillname: "Mongodb" },
     { imgicon: postgress, skillname: "PostgreSQL" },
     { imgicon: supabase, skillname: "Supabase" },
-    { imgicon: orms, skillname: "Prism ORM" },
+    { imgicon: orms, skillname: "Prisma ORM" },
     { imgicon: orms, skillname: "Drizzle ORM" },
     { imgicon: authentication, skillname: "Clerk | Authentication" },
     { imgicon: bootstrap, skillname: "Bootstrap" },
