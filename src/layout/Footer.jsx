@@ -27,9 +27,9 @@ const Footer = ({ scrollToSection, refs }) => {
                         <div>
                             <div className='font-bold text-[#A53DFF] pb-3 text-center sm:text-start xl:text-2xl'>Contact Info</div>
                             <ul className='flex flex-col gap-2 justify-center items-center sm:justify-center sm:items-start'>
-                                <li>ashu2040kumar@gmail.com</li>
+                                <li>ashutosh.wevdev@gmail.com</li>
                                 <li>Indore (Madhya Pradesh)</li>
-                                <li>https://www.instagram.com/debug_and_grow</li>
+                                <li>Whatsapp on: +91 7089717262</li>
                             </ul>
                         </div>
                     </div>

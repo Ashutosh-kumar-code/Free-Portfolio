@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import reactjs from "../../assets/images/react.png"
 import nextjs from "../../assets/images/nextjs.png"
 import image4 from "../../assets/images/vuejs.png"
@@ -30,7 +29,9 @@ import student from "../../assets/images/student.png"
 
 import ai_img from "../../assets/images/ai.png"
 import app_dev from "../../assets/images/app-dev.png"
-import web_dev from "../../assets/images/web-dev.png"
+import web_dev from "../../assets/images/web-dev.png";
+import wordPress from "../../assets/images/wordpress.png"
+import mysql from "../../assets/images/mysql.png"
 import Container from '../common/Container';
 
 const SkillsAbilities = ({ refs }) => {
@@ -50,7 +51,7 @@ const SkillsAbilities = ({ refs }) => {
     { imgicon: image4, skillname: "Vue.js" },
     { imgicon: mongodb, skillname: "Mongodb" },
     { imgicon: postgress, skillname: "PostgreSQL" },
-    { imgicon: supabase, skillname: "Supabase" },
+    { imgicon: mysql, skillname: "MySQL" },
     { imgicon: orms, skillname: "Prisma ORM" },
     { imgicon: orms, skillname: "Drizzle ORM" },
     { imgicon: authentication, skillname: "Clerk | Authentication" },
@@ -64,6 +65,7 @@ const SkillsAbilities = ({ refs }) => {
     { imgicon: java, skillname: "Java" },
     { imgicon: web_dev, skillname: "Web Development" },
     { imgicon: app_dev, skillname: "App Development" },
+     { imgicon: wordPress, skillname: "WordPress" },
   ]
 
   return (
@@ -73,11 +75,11 @@ const SkillsAbilities = ({ refs }) => {
         <p className='text-base py-8 text-[#87909D] text-center lg:text-center lg:text-[17px]'> Empowering digital innovation with a versatile skill set and modern technologies
         </p>
 
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
           {
             myskills_data.map((value, i) => {
               return (
-                <div class="skills_1 p-6 text-center">
+                <div className="skills_1 p-6 text-center" key={i}>
                   <img src={value.imgicon} alt="" />
                   <h2>{value.skillname}</h2>
                 </div>

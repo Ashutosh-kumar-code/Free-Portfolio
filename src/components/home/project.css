@@ -152,7 +152,8 @@ color: #556070;
   }
 
   .project_description_high{
-    height: 115px;
+    /* height: 115px; */
+    height: 92px;
   }
 
   @media screen and (max-width: 400px) {
