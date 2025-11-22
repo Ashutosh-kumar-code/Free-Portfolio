@@ -45,7 +45,7 @@ const HeroSection = ({ scrollToSection, refs }) => {
           <div className="grid grid-cols-1 sm:grid-cols-3  gap-1 mt-7  sm:flex-row  lg:mt-14 xl:mt-24 ">
             <div className="bg-[#EDD8FF] gap-2 flex justify-center items-center flex-col py-4 rounded-md">
               <h1 className=" text-xl font-semibold text-[#424E60] sm:text-2xl">
-                3+ Y.
+                6+ Y.
               </h1>
               <p className="text-[#697484] text-sm sm:text-base">Experience</p>
             </div>
@@ -72,3 +72,4 @@ const HeroSection = ({ scrollToSection, refs }) => {
 };
 
 export default HeroSection;
+
