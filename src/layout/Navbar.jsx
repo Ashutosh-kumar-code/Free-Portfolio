@@ -10,6 +10,13 @@ import { useState } from 'react'
 
 const Navbar = ({ scrollToSection, refs }) => {
     const [menuOpen, setMenuOpen] = useState(false)
+    const [scrolled, setScrolled] = React.useState(false)
+
+    React.useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 20)
+        window.addEventListener('scroll', onScroll)
+        return () => window.removeEventListener('scroll', onScroll)
+    }, [])
 
     const handleButton = () => {
         console.log("button clicked")
@@ -25,22 +32,19 @@ const Navbar = ({ scrollToSection, refs }) => {
 
 
     return (
-        <div className=''>
+        <div className={`sticky top-0 z-50 bg-white transition-all duration-300 ${scrolled ? 'navbar-scrolled' : ''}`}>
                <Container>
-            <div className='flex justify-between items-center py-6  '>
+            <div className='flex justify-between items-center py-3'>
                 <div>
-                    <img src={logo1} alt="" className='h-[45px] sm:h-[50px] md:h-[55px] lg:h-[65px] xl:h-[65px]' />
+                    <img src={logo1} alt="" className='h-[34px] sm:h-[38px] md:h-[40px] lg:h-[44px] xl:h-[44px]' />
                 </div>
                 <div className='hidden lg:flex'>
-                    <ul className='  flex   gap-10 justify-center items-center'>
-                        <li><Link onClick={() => scrollToSection(refs.home_section)} className='text-[#333333] font-medium text-base'>Home</Link></li>
-                        <li><Link onClick={() => scrollToSection(refs.aboutusRef)} className='text-[#333333] font-medium text-base'>About</Link></li>
-                        {/* <li><Link onClick={() => scrollToSection(refs.Process)} className='text-[#333333] font-medium text-base'>Process</Link></li> */}
-                        <li><Link onClick={() => scrollToSection(refs.ourMission)} className='text-[#333333] font-medium text-base'>Mission</Link></li>
-                        <li><Link onClick={() => scrollToSection(refs.ourSkills)} className='text-[#333333] font-medium text-base'>Skills</Link></li>
-                        <li><Link onClick={() => scrollToSection(refs.ourProjects)} className='text-[#333333] font-medium text-base'>Projects</Link></li>
-                        {/* <li><Link onClick={() => scrollToSection(refs.ourProjects)} className='text-[#333333] font-medium text-base'>Services</Link></li> */}
-                        {/* <li><Link to={'#'} className='text-[#333333] font-medium text-base'><Button onClick={handleButton} text={"Contacts"} type='button' /></Link></li> */}
+                    <ul className='flex gap-10 justify-center items-center'>
+                        <li><Link onClick={() => scrollToSection(refs.home_section)} className='text-[#333333] font-medium text-base relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#A53DFF] after:transition-all after:duration-300 hover:after:w-full hover:text-[#A53DFF]'>Home</Link></li>
+                        <li><Link onClick={() => scrollToSection(refs.aboutusRef)} className='text-[#333333] font-medium text-base relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#A53DFF] after:transition-all after:duration-300 hover:after:w-full hover:text-[#A53DFF]'>About</Link></li>
+                        <li><Link onClick={() => scrollToSection(refs.ourMission)} className='text-[#333333] font-medium text-base relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#A53DFF] after:transition-all after:duration-300 hover:after:w-full hover:text-[#A53DFF]'>Mission</Link></li>
+                        <li><Link onClick={() => scrollToSection(refs.ourSkills)} className='text-[#333333] font-medium text-base relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#A53DFF] after:transition-all after:duration-300 hover:after:w-full hover:text-[#A53DFF]'>Skills</Link></li>
+                        <li><Link onClick={() => scrollToSection(refs.ourProjects)} className='text-[#333333] font-medium text-base relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#A53DFF] after:transition-all after:duration-300 hover:after:w-full hover:text-[#A53DFF]'>Projects</Link></li>
                     </ul>
                 </div>
                 {/* Mobile Menu Icon */}

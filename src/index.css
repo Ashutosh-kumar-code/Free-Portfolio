@@ -2,13 +2,284 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
-
 body {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== SCROLL REVEAL ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ========== STAGGER DELAYS ========== */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
+
+/* ========== FLOATING IMAGE ========== */
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-16px); }
+}
+.float-animation {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+/* ========== HERO TEXT ENTRANCE ========== */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-text-1 { animation: fadeSlideUp 0.7s ease forwards; }
+.hero-text-2 { animation: fadeSlideUp 0.7s 0.25s ease forwards; opacity: 0; }
+.hero-text-3 { animation: fadeSlideUp 0.7s 0.5s ease forwards; opacity: 0; }
+.hero-stats  { animation: fadeSlideUp 0.7s 0.75s ease forwards; opacity: 0; }
+
+/* ========== TYPING CURSOR (handled in hero section above) ========== */
+.typing-cursor::after {
+  content: '|';
+  color: #A53DFF;
+  margin-left: 2px;
+}
+
+/* ========== PURPLE GLOW PULSE on hero name ========== */
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 8px rgba(165,61,255,0.3); }
+  50% { text-shadow: 0 0 24px rgba(165,61,255,0.7); }
+}
+.glow-purple {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* ========== HERO SECTION ========== */
+
+.hero-wrapper {
+  background: #fff;
+  position: relative;
+}
+
+/* blobs */
+@keyframes blobMove1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.08); }
+}
+@keyframes blobMove2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-25px, 20px) scale(1.06); }
+}
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
+}
+.blob-1 {
+  width: 420px;
+  height: 420px;
+  background: #A53DFF;
+  top: -100px;
+  right: -80px;
+  animation: blobMove1 8s ease-in-out infinite;
+}
+.blob-2 {
+  width: 300px;
+  height: 300px;
+  background: #c97bff;
+  bottom: 0px;
+  left: -60px;
+  animation: blobMove2 10s ease-in-out infinite;
+}
+
+/* greeting chip */
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #EDD8FF;
+  color: #7B1FA2;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+/* gradient name */
+.hero-name-gradient {
+  background: linear-gradient(135deg, #A53DFF 0%, #6B21A8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* typewriter */
+.hero-role-prefix {
+  color: #556070;
+  font-size: 18px;
+  font-weight: 500;
+}
+.hero-role-text {
+  color: #A53DFF;
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 220px;
+  display: inline-block;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.hero-cursor {
+  color: #A53DFF;
+  animation: blink 1s step-end infinite;
+  font-weight: 300;
+}
+
+/* image frame */
+.hero-img-frame {
+  position: relative;
+  display: inline-block;
+}
+.hero-img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 32px;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 24px 64px rgba(165, 61, 255, 0.22);
+}
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.hero-ring {
+  position: absolute;
+  inset: -12px;
+  border-radius: 40px;
+  border: 3px dashed rgba(165, 61, 255, 0.45);
+  animation: rotateSlow 12s linear infinite;
+  z-index: 1;
+}
+
+/* availability badge */
+.hero-badge {
+  position: absolute;
+  bottom: 24px;
+  left: -18px;
+  z-index: 3;
+  background: #fff;
+  border: 1.5px solid #EDD8FF;
+  box-shadow: 0 8px 24px rgba(165, 61, 255, 0.18);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7B1FA2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.6; }
+}
+.hero-badge-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: inline-block;
+  animation: pulseDot 1.8s ease-in-out infinite;
+}
+
+/* stat cards */
+.hero-stat-card {
+  background: #fff;
+  border: 1.5px solid #EDD8FF;
+  border-radius: 16px;
+  padding: 14px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 4px 16px rgba(165, 61, 255, 0.08);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+.hero-stat-card:hover {
+  background: #A53DFF;
+  border-color: #A53DFF;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(165, 61, 255, 0.3);
+}
+.hero-stat-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+.hero-stat-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: #132238;
+  transition: color 0.3s;
+}
+.hero-stat-card:hover .hero-stat-value,
+.hero-stat-card:hover .hero-stat-label {
+  color: #fff;
+}
+.hero-stat-label {
+  font-size: 12px;
+  color: #87909D;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* ========== SKILL CARD HOVER LIFT ========== */
+.skills_1 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skills_1:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(165, 61, 255, 0.25);
+}
+
+/* ========== NAVBAR SCROLL SHADOW ========== */
+.navbar-scrolled {
+  box-shadow: 0 4px 20px rgba(165, 61, 255, 0.15);
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.95) !important;
 }

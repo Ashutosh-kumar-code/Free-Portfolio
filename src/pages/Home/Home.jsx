@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import useScrollReveal from '../../hooks/useScrollReveal'
 import HeroSection from '../../components/home/HeroSection'
 import WhatIdo from '../../components/home/WhatIdo'
 import OurMission from '../../components/home/OurMission'
@@ -18,6 +19,8 @@ const Home = () => {
   const ourProjects = useRef(null);
   const home_section = useRef(null);
   // const ourSkills = useRef(null);
+
+  useScrollReveal();
 
   const scrollToSection = (ref) => {
     window.scrollTo({
